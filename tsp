@@ -19,9 +19,6 @@ warnings.filterwarnings("ignore")
 
 
 
-
-np.random.seed(k)
-
 # define TSP
 
 n_customer = 10
@@ -85,6 +82,6 @@ status = problem.solve(solver)
 
 # output status, value of objective function
 end = time.time()
-print(k, 'fast', round(end-start,0), pulp.LpStatus[status], round(pulp.value(problem.objective),0)
+print('fast', round(end-start,0), pulp.LpStatus[status], round(pulp.value(problem.objective),0)
 
 
